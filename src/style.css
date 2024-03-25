@@ -1,0 +1,315 @@
+/* configuraões padrões */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+ }
+body {
+    display:  flex;
+    justify-content: center;
+    background-color: #22212C;
+    height: 100vh;
+}
+
+/* definindo configurações do body e as areas do layout */
+#central {
+    
+    position: absolute;
+    height: 100%;
+    max-width: 2500px;
+    font-family: 'Merriweather Sans', sans-serif;
+    width: 100%;
+    padding: 40px 40px 20px 40px;
+    display: grid;
+    grid-template-areas:
+     "Head main"
+     "aside main"
+     "footer footer";
+    grid-template-columns: 348px 1fr;
+    grid-template-rows: 292px 1fr 58px;
+    
+    color: #837E9F;
+    
+    
+    
+    
+ }
+/*configurando meu header */
+#logo {
+    grid-area: Head;
+    display: flex;
+    height: 292px;
+    width: 348px;
+    background-color: #302F3D;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 2px #18181f;
+    
+    
+   
+    
+}/* configurando minha foto*/
+#logo img {
+    padding: 1px;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border: 2px solid #00FF00;
+    margin-bottom: 30px;
+
+}
+#logo p {
+    text-align: center;
+    line-height: 23px;
+}
+#logo strong {
+    font-size: 23px;
+    
+}/*configurando meu aside*/
+#aside {
+    margin-top: 30px;
+    grid-area: aside;
+    display: flex;
+    flex-direction:  column;
+    gap: 30px;
+}
+#aside nav {
+    height: 348px;
+    width: 348px;
+    background-color: #302F3D;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 2px #18181f;
+    
+}
+.links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+    
+    
+}
+.links a {
+    text-decoration: none;
+    color: #837E9F;
+    font-size: 12px;
+}
+
+/*configurando a seção de tecnologias */
+#tecno {
+    width: 348px;
+    height: 208px;
+    background-color: #302F3D;
+    display: flex;
+    padding: 30px 20px;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 20px;
+    border-radius: 20px;
+    font-weight: 700;
+    box-shadow: 0px 1px 2px #18181f;
+}
+
+#tecno div {
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    
+}
+
+#tecno p {
+    display: flex;
+    color: black;
+    background-color: #CB92B1;
+    width: 86px;
+    height: 24px;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    font-weight: 700;
+
+    
+}
+/*configurando a seção de experiências*/
+#exp {
+    width: 348px;
+    height: 352px;
+    background-color: #302F3D;
+    display: flex;
+    padding: 30px 20px;
+    font-size: 20px;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 20px;
+    box-shadow: 0px 1px 2px #18181f;
+    font-weight: 700;
+}
+
+#exp ul {
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    flex-direction: column;
+    gap: 20px;
+    
+    margin-left: 20px;
+    font-size: 14px;
+    padding-left: 20px;
+}
+#exp p {
+    font-size: 12px;
+}
+/* configurando a seção de educação*/
+#edu {
+    width: 348px;
+    height: 352px;
+    background-color: #302F3D;
+    border-radius: 20px;
+    padding: 30px 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0px 1px 2px #18181f;
+    font-weight: 700;
+}
+#edu ul {
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    flex-direction: column;
+    gap: 20px;
+
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+#edu p {
+    font-size: 12px;
+}
+/*configurando meu rodapé*/
+footer {
+    
+    grid-area: footer;
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    
+}
+/*configurando minha pag principal */
+main {
+    
+    margin-left: 60px;
+    margin-bottom: 20px;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+/* area de projetos */
+#project {
+    
+    width: 100%;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+/* box do titulo */
+.title1 {
+    display: flex;
+    background-color: #302F3D;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 86px;
+    padding-left: 30px;
+    padding-right: 31px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 0px 1px 1px #18181f;
+}
+
+.title1 a {
+    text-decoration: none;
+    color: #837E9F;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#folder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+    justify-content: center;
+    
+}
+
+
+.container {
+    background-color: #302F3D;
+    display: flex;
+    max-width: 440px;
+    min-width: auto;
+    flex-direction: column;
+    gap: 22px;
+    width: 100%;
+    height: 186px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #837E9F;
+    padding: 30px 10px 30px 30px;
+    font-size: 14px;
+    box-shadow: 0px 1px 2px #18181f;
+}
+.container p {
+    height: 100%;
+}
+
+.container span {
+    display: flex;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    align-items: center;
+}
+
+.bottom-card {
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    margin-right: 20px;
+    
+}
+
+.bottom-card div{
+
+    display: flex;
+    gap: 16px;
+    align-items: end;
+    
+
+}
+
+

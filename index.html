@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="icon" type="image/png" href="Assets/account_circle.png">
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    
     <div id = "central"> 
         <header id="logo">
-        <img src="Assets/Rickicone.png" alt="Foto de Perfil">
-        <p>
-            <strong>Riquelmo Medeiros</strong>
-            <br>Front-End Developer
-        </p>
+        <img id="foto" alt="Foto de Perfil">
+        <span>
+            <strong id="perfil"></strong>
+            <p></p>
+        </span>
     </header>
     <aside id="aside">
         <nav>
@@ -28,21 +29,21 @@
             </a>
          </div>
          <div class="links">
-            <img src="Assets/twitter.svg" alt="Rocketseat">
-            <a href="https://twitter.com/rickelzin" target="_blank">
-                Twitter
-            </a>
-         </div>
-         <div class="links">
-            <img src="Assets/github.svg" alt="Rocketseat">
+            <img src="Assets/github.svg" alt="github">
             <a href="https://github.com/RickM19" target="_blank">
                 GitHUB
             </a>
          </div>
          <div class="links">
-            <img src="Assets/instagram.svg" alt="Rocketseat">
+            <img src="Assets/instagram.svg" alt="instagram">
             <a href="https://www.instagram.com/riquelmo_rick/" target="_blank">
                 Instagram
+            </a>
+         </div>
+         <div class="links">
+            <img src="Assets/linkedin.svg" alt="linkedin">
+            <a href="https://www.linkedin.com/in/riquelmo-medeiros" target="_blank">
+                linkedin
             </a>
          </div>
         </nav>
@@ -53,6 +54,7 @@
                 <p>HTML</p>
                 <p>GitHUB</p>
                 <p>Git</p>
+                <p>JavaScript</p>
                 
                 
             </div>
@@ -100,67 +102,8 @@
     </aside>
     <main>
         <section id="project">
-            <div class="title1"><h2>My Projects</h2><a href="">Veja todos</a></div>
-            <nav id="folder">
-                <a href="" class="container">
-                    <span><img src="Assets/folder.svg" alt="arquivo"><h3>nome.projeto</h3></span>
-                    <p>Um texto descritivo</p>
-                    <div class="bottom-card">
-                        <div>
-                          <span class="stats"><img src="Assets/star.svg" alt="star"><p>0</p></span>
-                          <span class="stats"><img src="Assets/git-branch.svg" alt="branch"><p>0</p></span>  
-                        </div>
-                        <p>TECH</p>
-                        
-                    
-                    
-                    
-                    </div>
-                    
-
-
-                </a>
-                <a href="" class="container">
-                    <span><img src="Assets/folder.svg" alt="arquivo"><h3>nome.projeto</h3></span>
-                    <p>Um texto descritivo</p>
-                    <div class="bottom-card">
-                        <div>
-                          <span class="stats"><img src="Assets/star.svg" alt="star"><p>0</p></span>
-                          <span class="stats"><img src="Assets/git-branch.svg" alt="branch"><p>0</p></span>  
-                        </div>
-                        <p>TECH</p>
-                        
-                    
-                    
-                    
-                    </div>
-                    
-
-
-                </a>
-                <a href="" class="container">
-                    <span><img src="Assets/folder.svg" alt="arquivo"><h3>nome.projeto</h3></span>
-                    <p>Um texto descritivo</p>
-                    <div class="bottom-card">
-                        <div>
-                          <span class="stats"><img src="Assets/star.svg" alt="star"><p>0</p></span>
-                          <span class="stats"><img src="Assets/git-branch.svg" alt="branch"><p>0</p></span>  
-                        </div>
-                        <p>TECH</p>
-                        
-                    
-                    
-                    
-                    </div>
-                    
-
-
-                </a>
-            
-
-
-            
-                
+            <div class="title1"><h2>My Projects</h2><a href="https://github.com/RickM19?tab=repositories" target="_blank">Veja todos</a></div>
+            <nav id="folder">   
             </nav>
         </section>
         <section id="posts">
@@ -171,6 +114,6 @@
 </div>
        
     
-    
+<script src="src/js/script.js"></script>
 </body>
 </html>

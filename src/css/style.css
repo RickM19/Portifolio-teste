@@ -54,16 +54,16 @@ body {
    
     
 }/* configurando minha foto*/
-#logo img {
+#foto {
     padding: 1px;
     width: 128px;
     height: 128px;
     border-radius: 50%;
     border: 2px solid #00FF00;
     margin-bottom: 30px;
-
+    
 }
-#logo p {
+#logo span {
     text-align: center;
     line-height: 23px;
 }
@@ -71,6 +71,7 @@ body {
     font-size: 23px;
     
 }/*configurando meu aside*/
+
 #aside {
     margin-top: 30px;
     grid-area: aside;
@@ -88,6 +89,7 @@ body {
     gap: 20px;
     border-radius: 20px;
     box-shadow: 0px 1px 2px #18181f;
+    
     
 }
 .links {

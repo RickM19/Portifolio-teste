@@ -58,9 +58,15 @@ async function githubAPI () {
         
     }catch(e) {
         console.log(e)
-    }
-    
-    
-}
+    } finally {
+       
+        const loadingScreen = document.querySelector("#loading")
+        const appScreen = document.querySelector("#central")
 
+        appScreen.removeAttribute("style")
+        
+        loadingScreen.setAttribute("style", "display:none")
+        
+    }
+}
 githubAPI()

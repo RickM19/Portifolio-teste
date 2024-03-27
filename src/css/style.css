@@ -12,6 +12,20 @@ body {
     height: 100vh;
 }
 
+/* definindo a tela de carregamento */
+
+#loading {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #22212C;
+    color: #837E9F;
+}
+
 /* definindo configurações do body e as areas do layout */
 #central {
     
@@ -28,7 +42,6 @@ body {
      "footer footer";
     grid-template-columns: 348px 1fr;
     grid-template-rows: 292px 1fr 58px;
-    
     color: #837E9F;
     
     
@@ -46,7 +59,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    font-size: 13px;
+    font-size: 16px;
     margin-bottom: 30px;
     box-shadow: 0px 1px 2px #18181f;
     
@@ -72,12 +85,21 @@ body {
     
 }/*configurando meu aside*/
 
+#logo p {
+    gap: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #aside {
     margin-top: 30px;
     grid-area: aside;
     display: flex;
     flex-direction:  column;
     gap: 30px;
+    
 }
 #aside nav {
     height: 348px;

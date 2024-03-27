@@ -34,7 +34,7 @@ async function githubAPI () {
                 }
                 box.innerHTML = `
                     
-                        <span><img src="/Assets/folder.svg" alt="arquivo"><h3>${rep.name}</h3></span>
+                        <span><img src="Assets/folder.svg" alt="arquivo"><h3>${rep.name}</h3></span>
                         <p>${descricao}</p>
                         <div class="bottom-card">
                             <div>

@@ -122,7 +122,7 @@ body {
     
     
 }
-.links a {
+.links {
     text-decoration: none;
     color: #837E9F;
     font-size: 12px;
@@ -249,7 +249,7 @@ main {
 #project {
     
     width: 100%;
-    height: 520px;
+    height: 620px;
     display: flex;
     flex-direction: column;
     gap: 31px;
@@ -275,9 +275,15 @@ main {
     color: #837E9F;
     font-size: 14px;
     font-weight: 400;
+    transition: transform 0.5s ease-in-out, color 0.5s ease;
 }
-
+.title1 a:hover {
+    transform: scale(1.05);
+    color: #cec7f5;
+}
 #folder {
+    
+    padding: 5px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -286,12 +292,15 @@ main {
     overflow-y: hidden;
     justify-content: center;
     
+    
 }
 
 
 .container {
+    
     background-color: #302F3D;
     display: flex;
+    
     max-width: 440px;
     min-width: auto;
     flex-direction: column;
@@ -304,9 +313,21 @@ main {
     padding: 30px 10px 30px 30px;
     font-size: 14px;
     box-shadow: 0px 1px 2px #18181f;
+    transition: transform 0.3s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+    
 }
+
+
+.container:hover {
+    transform: scale(1.05);
+    background-color: #30303d;
+    color: #9e97c2;
+    
+}
+
 .container p {
     height: 100%;
+    overflow-y: hidden;
 }
 
 .container span {
@@ -335,5 +356,3 @@ main {
     
 
 }
-
-

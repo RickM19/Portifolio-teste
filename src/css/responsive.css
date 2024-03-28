@@ -137,6 +137,7 @@
         gap: 10px;
     }
     #aside nav {
+        width: 90%;
         background-color: unset;
         height: auto;
         order: 2;

@@ -56,9 +56,10 @@
         padding: 5px;
     }
     #logo {
+
         order: 1;
         margin-bottom: 10px;
-        width: 250px;
+        width: 90vw;
         font-size: 10px;
     }
     
@@ -83,8 +84,8 @@
     .title1 {
         height: 60px;
         font-size: 12px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .title1 a {
         
@@ -93,11 +94,12 @@
         
     
     #folder {
-        padding-left: 120px;
-        max-width: 1400px;
+        
+        
         gap: 10px;
         flex-wrap: nowrap;
         overflow-x: scroll;
+        justify-content: left;
         
     }
     .container {
@@ -108,23 +110,26 @@
         
     }
     #tecno {
+        width: 90vw;
         padding: 10px 5px;
         font-size: 12px;
         align-items: center;
         height: 150px;
     }
     #tecno div {
+        height: 100%;
         overflow-y: scroll;
         margin: 0;
     }
     #edu, #exp {
+        width: 90vw;
         font-size: 12px;
         align-items: center;
         
     }
     #edu ul, #exp ul {
         align-self: flex-start;
-        font-size: 8px;
+        font-size: 12px;
     }
     #aside {
         order: 3;
